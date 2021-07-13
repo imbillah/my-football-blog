@@ -1,0 +1,98 @@
+/* --------Google Font--------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/* .........header style.......... */
+.top-banner {
+  display: flex;
+  border: 2px dashed dodgerblue;
+}
+.flex-container {
+  width: 50%;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-left: 3%;
+}
+h1 {
+  font-size: 64px;
+  color: white;
+}
+.watch-button {
+  padding: 10px 25px;
+  text-decoration: none;
+  background: #e02c6d;
+  color: white;
+}
+.banner-image img {
+  width: 400px;
+  height: 450px;
+  object-fit: contain;
+}
+
+/* .......all-players section style.......... */
+section {
+  margin-top: 75px;
+}
+.all-players {
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-left: 4%;
+  display: grid;
+  row-gap: 25px;
+  column-gap: 30px;
+  background-color: lightgoldenrodyellow;
+  grid-template-columns: repeat(3, 1fr);
+}
+.player {
+  width: 320px;
+  height: 474px;
+  border: 2px dotted lightcoral;
+  padding: 15px 10px 25px 25px;
+}
+.player-image {
+  width: 300px;
+  height: 256px;
+  object-fit: contain;
+}
+.player-details {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* ...........optional section............ */
+
+.all-highlights {
+  display: flex;
+}
+.highlights-image img {
+  width: 567px;
+  height: 427px;
+}
+
+/* ..........footer style.......... */
+footer {
+  margin-top: 150px;
+}
+.footer-logo img {
+  width: 480px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.footer-icons {
+  text-align: center;
+}
+.footer-icons i {
+  color: #969bab;
+  margin-right: 15px;
+  font-size: 20px;
+}
+footer p {
+  text-align: center;
+  font-size: 18px;
+}
