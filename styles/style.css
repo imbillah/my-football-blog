@@ -7,6 +7,7 @@ body {
 }
 /* .........header style.......... */
 .top-banner {
+  background: #2d25a0;
   display: flex;
   border: 2px dashed dodgerblue;
 }
@@ -15,10 +16,13 @@ body {
   margin-right: 5%;
   margin-left: 5%;
   padding-left: 3%;
+  padding-bottom: 25px;
 }
 h1 {
+  padding-top: 60px;
   font-size: 64px;
   color: white;
+  margin-bottom: 25px;
 }
 .watch-button {
   padding: 10px 25px;
@@ -26,9 +30,13 @@ h1 {
   background: #e02c6d;
   color: white;
 }
+.banner-image {
+  padding-top: 50px;
+  padding-right: 80px;
+}
 .banner-image img {
   width: 400px;
-  height: 450px;
+  height: 520px;
   object-fit: contain;
 }
 
@@ -71,6 +79,39 @@ section {
 .highlights-image img {
   width: 567px;
   height: 427px;
+}
+/* .........bonus section............ */
+
+.celebration {
+  display: flex;
+}
+/* ..........top xi players.......... */
+
+.headline {
+  margin-left: 7%;
+}
+.top-players {
+  margin-right: 8%;
+  margin-left: 8%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 25px;
+  column-gap: 20px;
+}
+#player {
+  padding-left: 10px;
+  padding-top: 5px;
+  display: flex;
+  border: 1px dotted #f118b0;
+}
+#player-image img {
+  height: 85px;
+  width: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#player-name h4 {
+  padding-left: 10px;
 }
 
 /* ..........footer style.......... */
