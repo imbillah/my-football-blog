@@ -9,8 +9,8 @@ body {
 .top-banner {
   background: #2d25a0;
   display: flex;
-  border: 2px dashed dodgerblue;
 }
+
 .flex-container {
   width: 50%;
   margin-right: 5%;
@@ -19,25 +19,38 @@ body {
   padding-bottom: 25px;
 }
 h1 {
-  padding-top: 60px;
-  font-size: 64px;
+  padding-top: 15%;
+  font-size: 60px;
   color: white;
   margin-bottom: 25px;
 }
-.watch-button {
-  padding: 10px 25px;
-  text-decoration: none;
+button {
+  padding: 12px 35px;
+  border: none;
+  display: inline-block;
+  width: fit-content;
+  cursor: pointer;
   background: #e02c6d;
   color: white;
+  font-size: 16px;
+  transition: transform 0.5s;
+}
+button:hover {
+  background: #1698dd;
+  transform: translateY(-5px);
 }
 .banner-image {
-  padding-top: 50px;
-  padding-right: 80px;
+  padding-top: 2%;
+  padding-right: 5%;
 }
 .banner-image img {
   width: 400px;
   height: 520px;
   object-fit: contain;
+  transition: transform 0.5s;
+}
+.banner-image img:hover {
+  transform: translateY(-12px);
 }
 
 /* .......all-players section style.......... */
@@ -51,14 +64,13 @@ section {
   display: grid;
   row-gap: 25px;
   column-gap: 30px;
-  background-color: lightgoldenrodyellow;
   grid-template-columns: repeat(3, 1fr);
 }
 .player {
   width: 320px;
   height: 474px;
-  border: 2px dotted lightcoral;
   padding: 15px 10px 25px 25px;
+  box-shadow: 10px 10px 20px lightgrey;
 }
 .player-image {
   width: 300px;
@@ -67,7 +79,7 @@ section {
 }
 .player-details {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
 }
 
@@ -76,19 +88,44 @@ section {
 .all-highlights {
   display: flex;
 }
+.heading p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 20px;
+}
+h2 {
+  padding-top: 35px;
+  font-size: 40px;
+  color: #2d25a0;
+  font-weight: 700;
+}
+.watch-button {
+  padding: 10px 20px;
+  text-decoration: none;
+  background: #e02c6d;
+  color: white;
+  font-size: 14px;
+}
 .highlights-image img {
   width: 567px;
   height: 427px;
+  padding-top: 20px;
 }
 /* .........bonus section............ */
 
 .celebration {
   display: flex;
 }
+.embede-video {
+  padding: 45px 2% 20px 5%;
+  object-fit: contain;
+}
 /* ..........top xi players.......... */
 
 .headline {
-  margin-left: 7%;
+  margin-left: 8%;
+  padding-bottom: 35px;
 }
 .top-players {
   margin-right: 8%;
@@ -102,7 +139,6 @@ section {
   padding-left: 10px;
   padding-top: 5px;
   display: flex;
-  border: 1px dotted #f118b0;
 }
 #player-image img {
   height: 85px;
@@ -113,10 +149,15 @@ section {
 #player-name h4 {
   padding-left: 10px;
 }
+span {
+  color: #2d25a0;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
 
 /* ..........footer style.......... */
 footer {
-  margin-top: 150px;
+  margin-top: 250px;
 }
 .footer-logo img {
   width: 480px;
