@@ -10,7 +10,6 @@ body {
   background: #2d25a0;
   display: flex;
 }
-
 .flex-container {
   width: 50%;
   margin-right: 5%;
@@ -55,7 +54,7 @@ button:hover {
 
 /* .......all-players section style.......... */
 section {
-  margin-top: 75px;
+  margin-top: 90px;
 }
 .all-players {
   margin-right: 5%;
@@ -112,7 +111,7 @@ h2 {
   height: 427px;
   padding-top: 20px;
 }
-/* .........bonus section............ */
+/* .........winning celebration............ */
 
 .celebration {
   display: flex;
@@ -121,7 +120,7 @@ h2 {
   padding: 45px 2% 20px 5%;
   object-fit: contain;
 }
-/* ..........top xi players.......... */
+/* .......... COPA top xi players.......... */
 
 .headline {
   margin-left: 8%;
@@ -177,4 +176,51 @@ footer {
 footer p {
   text-align: center;
   font-size: 18px;
+}
+
+/* ........Media Query Mobile......... */
+
+@media only screen and (max-width: 600px) {
+  .top-banner {
+    flex-direction: column;
+  }
+  .banner-image img {
+    width: 320px;
+    height: 520px;
+    object-fit: contain;
+  }
+  .all-players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    width: 280px;
+  }
+  .player-image {
+    width: 265px;
+    height: 256px;
+    object-fit: contain;
+  }
+  .all-highlights {
+    flex-direction: column;
+  }
+  .highlights-image img {
+    width: 315px;
+    height: 275px;
+    object-fit: contain;
+  }
+
+  .embede-video iframe {
+    width: 310px;
+    height: 275px;
+  }
+  .celebration {
+    flex-direction: column;
+  }
+  .top-players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-logo img {
+    width: 200px;
+    object-fit: contain;
+  }
 }
